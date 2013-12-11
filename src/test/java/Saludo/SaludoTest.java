@@ -17,5 +17,13 @@ public class SaludoTest {
 		String mensaje = "Bienvenido: ";
 		assertEquals(mensaje, saludo.Saludar(mensaje,""));
 	}
+	
+	@Test
+	public void ElSaludoAunNombreEsElMismoSaludoMasElNombre() {
+		Saludo saludo = new Saludo();
+		String mensaje = "Bienvenido: ";
+		String nombre = "Leonardo";
+		assertEquals(mensaje+nombre, saludo.Saludar(mensaje,nombre));
+	}
 
 }
