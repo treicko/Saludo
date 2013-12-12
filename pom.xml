@@ -5,7 +5,7 @@
   <groupId>Saludo</groupId>
   <artifactId>Saludo</artifactId>
   <version>1.0</version>
-  <packaging>jar</packaging>
+  <packaging>war</packaging>
 
   <name>Saludo</name>
   <url>http://maven.apache.org</url>
@@ -33,6 +33,11 @@
         		<target>1.6</target>
     		</configuration>
     	</plugin>
+    	<plugin>
+  		   <groupId>org.mortbay.jetty</groupId>
+  		   <artifactId>jetty-maven-plugin</artifactId>
+  		   <version>8.1.12.v20130726</version>
+  		</plugin>
   	</plugins>
   </build>
   
